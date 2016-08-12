@@ -1,0 +1,23 @@
+{
+  // TODO Change to 'xo' style guide (which 'google'' is based on in the first place)
+  "extends": "google",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "angular": true,
+    "$": true,
+    "Modernizr": true
+  },
+  "rules": {
+    // The following rules differ from the google style guide.
+    "linebreak-style": [2, "windows"],
+    "max-len": [1, 120, 2, {
+      "ignoreComments": true,
+      "ignoreUrls": true
+    }],
+    "no-negated-condition": 0,
+    "one-var": [2, "always"],
+    "space-before-function-paren": [2, "always"]
+  }
+}

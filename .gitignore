@@ -1,0 +1,16 @@
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node files #
+/node_modules
+/bower_components
+npm-debug.log
+
+# Typings #
+/typings
+
+# Build files #
+/dist
