@@ -14,7 +14,7 @@ Verify that you are running at least node **v4.x.x** and npm **3.x.x** by runnin
 
 Install all dependencies: `npm install`
 
-Start development server: `npm start`
-Build for production: `npm run build`
-Run production build (remember to build first): `npm run server:prod`
-Run tests: `npm test`
+* Start development server: `npm start`
+* Build for production: `npm run build`
+* Run production build (remember to build first): `npm run server:prod`
+* Run tests: `npm test`
