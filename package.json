@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",
-    "autoprefixer": "6.4.0",
     "css-loader": "^0.23.1",
     "eslint": "^3.2.2",
     "eslint-config-xo": "^0.15.3",
@@ -44,7 +43,7 @@
     "node-sass": "^3.8.0",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.7",
-    "postcss": "5.1.2",
+    "postcss-loader": "^0.10.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.2",
     "sass-loader": "^4.0.0",

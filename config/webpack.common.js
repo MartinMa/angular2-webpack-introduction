@@ -33,18 +33,18 @@ module.exports = {
         // application-wide styles only
         test: /\.scss$/,
         exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract('style', 'css?-minification', 'postcss', 'sass')
+        loader: ExtractTextPlugin.extract('style', ['css', 'postcss', 'sass'])
       },
       {
         // component-scoped styles only
-        test: /\.css$/,
+        test: /\.scss$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw'
+        loaders: ['raw', 'postcss', 'sass']
       }
     ]
   },
 
-  postcss: [ autoprefixer({ browsers: ['last 5 versions'] }) ],
+  postcss: [autoprefixer({browsers: ['> 1%', 'last 2 versions'], remove: false})],
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
