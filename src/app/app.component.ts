@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import '../../public/css/styles.css';
+import '../../public/css/styles.scss';
 
 @Component({
   selector: 'my-app',
