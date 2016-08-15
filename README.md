@@ -5,7 +5,10 @@ This code is based on the official Angular.io guide [Create your Angular 2 appli
 
 Changes:
 * Added ESLint Configuration - The Pluggable JavaScript linter
+* Added TS Lint Configuration
+    * NOTE `tslint:latest`` can be found here https://github.com/palantir/tslint/tree/master/src/configs
 * Added http-server npm package to run the production build
+* Added Sass support and autoprefixer
 
 ### Installation instructions
 Open up a command prompt and navigate to the project folder.
@@ -14,6 +17,7 @@ Verify that you are running at least node **v4.x.x** and npm **3.x.x** by runnin
 
 Install all dependencies: `npm install`
 
+### Usage
 * Start development server: `npm start`
 * Build for production: `npm run build`
 * Run production build (remember to build first): `npm run server:prod`

@@ -1,5 +1,4 @@
 {
-  // tslint:latest can be found here https://github.com/palantir/tslint/tree/master/src/configs
   "extends": "tslint:latest",
   "rules": {
     "max-line-length": [

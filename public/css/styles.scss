@@ -1,0 +1,11 @@
+body {
+    background: #0147A7;
+    color: #fff;
+}
+
+.example {
+    display: flex;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
