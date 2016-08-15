@@ -21,4 +21,4 @@ export const appRoutingProviders: any[] = [
   AuthService
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const routing = RouterModule.forRoot(appRoutes, { useHash: true });
