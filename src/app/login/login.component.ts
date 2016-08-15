@@ -7,13 +7,22 @@ import { AuthService } from '../auth.service';
     <h2>LOGIN</h2>
     <p>{{message}}</p>
     <p>
-      <button type="button"
+      <label for="loginkey">Access key</label>
+      <input
+        type="text"
+        class="form-control"
+        id="loginkey"
+        placeholder="Access key"
+        [(ngModel)]="loginkey">
+      <button
+        type="button"
         class="btn btn-default"
         (click)="login()"
         *ngIf="!authService.isLoggedIn">
         Login
       </button>
-      <button type="button"
+      <button
+        type="button"
         class="btn btn-default"
         (click)="logout()"
         *ngIf="authService.isLoggedIn">
@@ -24,6 +33,7 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent {
   message: string;
+  loginkey: string;
 
   constructor(public authService: AuthService, public router: Router) {
     this.setMessage();
@@ -35,8 +45,8 @@ export class LoginComponent {
 
   login() {
     this.message = 'Trying to log in ...';
-    
-    this.authService.login().subscribe(() => {
+
+    this.authService.login(this.loginkey).subscribe(() => {
       this.setMessage();
 
       if (this.authService.isLoggedIn) {
@@ -46,6 +56,8 @@ export class LoginComponent {
           this.authService.redirectUrl : '/admin';
         // Redirect the user
         this.router.navigate([redirect]);
+      } else {
+        this.message = 'Wrong access code!';
       }
     });
   }
