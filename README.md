@@ -9,6 +9,7 @@ Changes:
     * NOTE `tslint:latest` can be found here https://github.com/palantir/tslint/tree/master/src/configs
 * Added http-server npm package to run the production build
 * Added Sass support and autoprefixer
+* Included Bootstrap 3 (via `bootstrap-sass` using `bootstrap-loader`)
 
 ### Installation instructions
 Open up a command prompt and navigate to the project folder.

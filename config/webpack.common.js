@@ -12,7 +12,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ['', '.js', '.ts', '.css', '.scss']
   },
 
   module: {
@@ -40,6 +40,11 @@ module.exports = {
         test: /\.scss$/,
         include: helpers.root('src', 'app'),
         loaders: ['raw', 'postcss', 'sass']
+      },
+      {
+        // Bootstrap 3
+        test: /bootstrap-sass\/assets\/javascripts\//,
+        loader: 'imports?jQuery=jquery'
       }
     ]
   },
@@ -53,6 +58,12 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
     })
   ]
 };
