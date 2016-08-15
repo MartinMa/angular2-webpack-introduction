@@ -5,8 +5,8 @@ This code is based on the official Angular.io guide [Create your Angular 2 appli
 
 Changes:
 * Added ESLint Configuration - The Pluggable JavaScript linter
-* Added TS Lint Configuration
-    * NOTE `tslint:latest`` can be found here https://github.com/palantir/tslint/tree/master/src/configs
+* Added TSLint Configuration
+    * NOTE `tslint:latest` can be found here https://github.com/palantir/tslint/tree/master/src/configs
 * Added http-server npm package to run the production build
 * Added Sass support and autoprefixer
 
