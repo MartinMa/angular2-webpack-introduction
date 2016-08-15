@@ -1,11 +1,23 @@
 body {
-    background: #0147A7;
-    color: #fff;
+  background: #0147A7;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+a.active {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .example {
-    display: flex;
-    transition: all .5s;
-    user-select: none;
-    background: linear-gradient(to bottom, white, black);
+  display: flex;
+  transition: all .5s;
+  user-select: none;
+background: -webkit-linear-gradient(white, black);
+background: -o-linear-gradient(white, black);
+background: linear-gradient(white, black);
 }
